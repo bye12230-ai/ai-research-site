@@ -1,0 +1,49 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="由 Markdown 笔记生成的学术知识网站" />
+    <title>AI Research Knowledge Site</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar">
+        <div class="brand">
+          <div class="brand-mark">AR</div>
+          <div>
+            <div class="brand-title">Research Notes</div>
+            <div class="brand-subtitle">Academic Knowledge Site</div>
+          </div>
+        </div>
+        <label class="search-label" for="searchInput">检索笔记</label>
+        <input id="searchInput" class="search-input" type="search" placeholder="输入关键词…" />
+        <nav class="note-nav" aria-label="笔记导航" id="noteNav"></nav>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <button class="menu-button" id="menuButton" aria-label="打开导航">☰</button>
+          <div class="breadcrumb" id="breadcrumb">Knowledge Base</div>
+        </header>
+
+        <div class="content-grid">
+          <article class="article-card">
+            <div class="article-meta" id="articleMeta"></div>
+            <div id="markdownContent" class="markdown-body">
+              <h1>正在加载知识库…</h1>
+            </div>
+          </article>
+
+          <aside class="toc-panel" aria-label="文章目录">
+            <div class="toc-title">目录</div>
+            <nav id="toc"></nav>
+          </aside>
+        </div>
+      </main>
+    </div>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
